@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #0052CC;
+  --color-brand-secondary: #00875A;
+  --color-brand-accent: #FF8B00;
+  --color-brand-bg: #0A0A0A;
+  --color-brand-surface: #121212;
+  --color-brand-surface-light: #F4F7FF;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-bg);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Base custom classes */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(0, 82, 204, 0.2);
+}
+
+.glow-accent {
+  box-shadow: 0 0 15px rgba(255, 139, 0, 0.15);
+}
+
+.border-glass {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.surface-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+}
+
+.glow-primary-hover:hover {
+  box-shadow: 0 0 35px rgba(0, 82, 204, 0.3);
+}
+
+.glow-secondary-hover:hover {
+  box-shadow: 0 0 35px rgba(0, 135, 90, 0.25);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 40%, rgba(255,255,255,0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
