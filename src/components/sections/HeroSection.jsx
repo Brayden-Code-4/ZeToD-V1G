@@ -109,8 +109,8 @@ export default function HeroSection() {
                 <span className="text-xs text-zinc-500 font-mono">Per Assessment</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold font-heading text-white">400+</span>
-                <span className="text-xs text-zinc-500 font-mono">African Devs Synced</span>
+                <span className="text-2xl font-bold font-heading text-white">Built</span>
+                <span className="text-xs text-zinc-500 font-mono">For African Devs</span>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ export default function HeroSection() {
 
             {/* Glowing floating label */}
             <div className="absolute -top-6 -right-6 px-4 py-2 bg-[#FF8B00] text-black text-xs font-bold rounded-lg rotate-12 glow-accent select-none pointer-events-none">
-              ELITE LEVEL
+              COMING SOON
             </div>
           </div>
           
